@@ -1,0 +1,5 @@
+{
+  "name": "LivreMêlé Débrouilleur",
+  "description": "A browser-based SVG book reader for the LivreMêlé project.",
+  "requestFramePermissions": []
+}

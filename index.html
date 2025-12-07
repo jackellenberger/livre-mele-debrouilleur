@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LivreMêlé Débrouilleur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom scrollbar for a cleaner look */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+      }
+      
+      .perspective-1500 {
+        perspective: 1500px;
+      }
+      .backface-hidden {
+        backface-visibility: hidden;
+      }
+      .transform-style-3d {
+        transform-style: preserve-3d;
+      }
+      
+      /* Page turn animation classes */
+      .page-enter {
+        opacity: 0;
+        transform: rotateY(90deg);
+      }
+      .page-enter-active {
+        opacity: 1;
+        transform: rotateY(0);
+        transition: opacity 300ms, transform 300ms;
+      }
+      .page-exit {
+        opacity: 1;
+        transform: rotateY(0);
+      }
+      .page-exit-active {
+        opacity: 0;
+        transform: rotateY(-90deg);
+        transition: opacity 300ms, transform 300ms;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-stone-200 text-stone-800 antialiased overflow-hidden">
+    <div id="root"></div>
+  </body>
+</html>
